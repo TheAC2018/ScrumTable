@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Welcome to Scrum Table Manager</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/app.css"> 
+    <link rel="stylesheet" type="text/css" href="assets/lib/stroke-7/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/lib/theme-switcher/theme-switcher.min.css">
+    <script src="main.js"></script>
+    <script src="assets/lib/jquery.nestable/jquery.nestable.js"></script>
+</head>
+<body style="background-image: url(assets/img/backgrounds/SpaceBackground.png);height: 100%;background-position: center;background-repeat: no-repeat;background-size: cover;">
+    
+   <div class="container-fluid">
+    <div class="row">
+      <div class="container-fluid">
+        <div class="col-lg-12">
+            <div class="container-fluid">
+            <nav class="navbar navbar-expand navbar-dark mai-top-header">
+                    <div class="container"><a href="#" class="navbar-brand"></a>
+                          <!--Left Menu-->
+                          <ul class="nav navbar-nav mai-top-nav">
+                            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                          </ul>
+                          <!--Icons Menu-->
+                          <ul class="navbar-nav float-lg-right mai-icons-nav">
+                            <li class="dropdown nav-item mai-messages"><a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle"><span class="icon s7-comment"></span></a>
+                              <ul class="dropdown-menu">
+                                <li>
+                                  <div class="title">Messages</div>
+                                  <div class="mai-scroller ps-container ps-theme-default" data-ps-id="b94350bb-fccf-ac90-5b80-9631f3633bdb">
+                                    <div class="content">
+                                      <ul>
+                                        <li><a href="#">
+                                            <div class="img"><img src="assets/img/avatars/aydin_avatar.jpg"></div>
+                                            <div class="content"><span class="date">16 Sept</span><span class="name">Aydın Bulut</span><span class="desc">The song that has been brave, will always be the new song. </span></div></a></li>
+                                        <li><a href="#">
+                                            <div class="img"><img src="assets/img/avatars/gokay_avatar.jpg"></div>
+                                            <div class="content"><span class="date">4 Sept</span><span class="name">Gökay Kara</span><span class="desc">You will see me fly across the city of fury where no one knows of me.</span></div></a></li>
+                                        <li><a href="#">
+                                            <div class="img"><img src="assets/img/avatars/instagram-avatar-5.png"></div>
+                                            <div class="content"><span class="date">13 Aug</span><span class="name">Jaime Garzón</span><span class="desc">Now everything came back to the abnormality.</span></div></a></li>
+                                        <li><a href="#">
+                                            <div class="img"><img src="assets/img/avatars/kadir_avatar.jpg"></div>
+                                            <div class="content"><span class="date">13 Aug</span><span class="name">Kadir Alan</span><span class="desc">Things just couldn't even be the same 'Cause I'm as free as a bird now.</span></div></a></li>
+                                      </ul>
+                                    </div>
+                                  <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 0px;"><div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps-scrollbar-y-rail" style="top: 0px; right: 0px;"><div class="ps-scrollbar-y" tabindex="0" style="top: 0px; height: 0px;"></div></div></div>
+                                  <div class="footer"> <a href="#">View all messages</a></div>
+                                </li>
+                              </ul>
+                            </li>
+                            <li class="dropdown nav-item mai-notifications"><a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle"><span class="icon s7-bell"></span><span class="indicator"></span></a>
+                              <ul class="dropdown-menu">
+                                <li>
+                                  <div class="title">Notifications</div>
+                                  <div class="mai-scroller ps-container ps-theme-default" data-ps-id="883442ea-ffb3-8abd-e269-9d9e356a4f48">
+                                    <div class="content">
+                                      <ul>
+                                        <li><a href="#">
+                                            <div class="icon"><span class="s7-check"></span></div>
+                                            <div class="content"><span class="desc">This is a new message for my dear friend <strong>Rob</strong>.</span><span class="date">10 minutes ago</span></div></a></li>
+                                        <li><a href="#">
+                                            <div class="icon"><span class="s7-add-user"></span></div>
+                                            <div class="content"><span class="desc">You have a new fiend request pending from <strong>John Doe</strong>.</span><span class="date">2 days ago</span></div></a></li>
+                                        <li><a href="#">
+                                            <div class="icon"><span class="s7-graph1"></span></div>
+                                            <div class="content"><span class="desc">Your site visits have increased <strong>15.5%</strong> more since the last week.</span><span class="date">2 hours ago</span></div></a></li>
+                                        <li><a href="#">
+                                            <div class="icon"><span class="s7-check"></span></div>
+                                            <div class="content"><span class="desc">This is a new message for my dear friend <strong>Rob</strong>.</span><span class="date">10 minutes ago</span></div></a></li>
+                                      </ul>
+                                    </div>
+                                  <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 0px;"><div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps-scrollbar-y-rail" style="top: 0px; right: 0px;"><div class="ps-scrollbar-y" tabindex="0" style="top: 0px; height: 0px;"></div></div></div>
+                                  <div class="footer"> <a href="#">View all notifications</a></div>
+                                </li>
+                              </ul>
+                            </li>
+                            <li class="dropdown nav-item mai-settings"><a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle"><span class="icon s7-settings"></span></a>
+                              <ul class="dropdown-menu">
+                                <li>
+                                  <div class="title">Settings</div>
+                                  <div class="content">
+                                    <ul>
+                                      <li><span>Enable Notifications</span>
+                                        <div class="float-right">
+                                          <div class="switch-button switch-button-sm">
+                                            <input type="checkbox" checked="" name="check" id="switch1"><span>
+                                              <label for="switch1"></label></span>
+                                          </div>
+                                        </div>
+                                      </li>
+                                      <li><span>Auto Commit</span>
+                                        <div class="float-right">
+                                          <div class="switch-button switch-button-sm">
+                                            <input type="checkbox" checked="" name="check2" id="switch2"><span>
+                                              <label for="switch2"></label></span>
+                                          </div>
+                                        </div>
+                                      </li>
+                                      <li><span>Sidebar</span>
+                                        <div class="float-right">
+                                          <div class="switch-button switch-button-sm">
+                                            <input type="checkbox" name="check3" id="switch3"><span>
+                                              <label for="switch3"></label></span>
+                                          </div>
+                                        </div>
+                                      </li>
+                                      <li><span>Full-width Layout</span>
+                                        <div class="float-right">
+                                          <div class="switch-button switch-button-sm">
+                                            <input type="checkbox" checked="" name="check4" id="switch4"><span>
+                                              <label for="switch4"></label></span>
+                                          </div>
+                                        </div>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </li>
+                              </ul>
+                            </li>
+                          </ul>
+                          <!--User Menu-->
+                          <ul class="nav navbar-nav float-lg-right mai-user-nav">
+                            <li class="dropdown nav-item"><a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="dropdown-toggle nav-link"> <img src="assets/img/avatars/cengiz_avatar.jpg"><span class="user-name">Cengiz Cebeci</span><span class="angle-down s7-angle-down"></span></a>
+                              <div role="menu" class="dropdown-menu"><a href="#" class="dropdown-item"><span class="icon s7-home"> </span>My Account</a><a href="pages-profile.php" class="dropdown-item"><span class="icon s7-user"> </span>Profile</a><a href="#" class="dropdown-item"> <span class="icon s7-cash"> </span>Billing</a><a href="#" class="dropdown-item"> <span class="icon s7-tools"> </span>Settings</a><a href="pages-login.php" class="dropdown-item"><span class="icon s7-power"> </span>Log Out</a></div>
+                            </li>
+                          </ul>
+                        </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+        <div class="container-fluid">
+          <div class="row">
+              <div class="col-lg-3" style="background-color: #e5e5e5;">
+                <div class="panel-heading panel-heading-divider" style="background-color: #e5e5e5;"><div class="tools"><span class="icon s7-plus"></span></div>Stories<span class="panel-subtitle">You can check your stories or add new story.</span></div>
+              </div>  
+              <div class="col-lg-3" style="background-color: #58C7EF;">
+                  <div class="panel-heading panel-heading-divider" style="background-color: #58C7EF; color:white;"><div class="tools"><span class="icon s7-plus"></span></div>Planning<span class="panel-subtitle">Tasks in planning.</span></div>
+              </div>  
+              <div class="col-lg-3" style="background-color: #FFDC42;">
+                  <div class="panel-heading panel-heading-divider" style="background-color: #FFDC42; color:white;">In Progress<span class="panel-subtitle">Tasks in progress.</span></div>
+              </div>  
+              <div class="col-lg-3" style="background-color: #2cc185;">
+                  <div class="panel-heading panel-heading-divider" style="background-color: #2cc185; color:white;">Done!<span class="panel-subtitle">Tasks who finished.</span></div>
+              </div>  
+           </div>
+         </div>
+    </div>
+    <div class="row">
+        <div class="container-fluid">
+          <div class="row" style="border-bottom:3px black solid;">
+            <div class="col-lg-3" data-story-column>
+                <div class="panel panel-border" style="margin-top: 10px;">
+                    <div class="panel-heading panel-heading-color panel-heading-color-contrast">
+                      <div class="tools"></span><span class="icon s7-close"></span></div><span class="title">Authentication Module</span><span class="panel-subtitle">19.05.2018 - 26.05.2018</span>
+                    </div>
+                    <div class="panel-body">
+                      <p>Quisque gravida aliquam diam at cursus, quisque laoreet ac lectus a rhoncusac tempus odio.</p>
+                      <p>Aliquam posuere volutpat turpis, ut euimod diam pellentesque at. Sed sit amet nulla a dui dignisim euismod. Morbi luctus elementum dictum. Donec convallis mattis elit id varius. Quisque facilisis sapien quis mauris,, erat condimentum.</p>
+                    </div>
+                  </div>
+            </div>  
+            <div class="col-lg-3" style="border-left:3px white solid"  id="sortableNotStarted" class="connectedSortable" data-planning-column>   
+                <div class="panel panel-full-color panel-full-color-grey" style="margin-top: 10px;">
+                    <div class="panel-heading panel-heading-divider">
+                      <div class="tools"></div><span class="title">Default Full Panel</span><span class="panel-subtitle">Panel subtitle description</span>
+                    </div>
+                    <div class="panel-body">
+                      <p> Quisque gravida aliquam diam at cursus, quisque laoreet ac lectus a rhoncusac tempus odio. </p>
+                      <p>Aliquam posuere volutpat turpis, ut euimod diam pellentesque at. Sed sit amet nulla a dui dignisim euismod. Morbi luctus elementum dictum. Donec convallis mattis elit id varius. Quisque facilisis sapien quis mauris,, erat condimentum.</p>
+                    </div>
+                  </div>
+                  <div class="panel panel-full-color panel-full-color-grey" style="margin-top: 10px;">
+                      <div class="panel-heading panel-heading-divider">
+                        <div class="tools"></span></div><span class="title">Default Full Panel</span><span class="panel-subtitle">Panel subtitle description</span>
+                      </div>
+                      <div class="panel-body">
+                        <p> Quisque gravida aliquam diam at cursus, quisque laoreet ac lectus a rhoncusac tempus odio. </p>
+                        <p>Aliquam posuere volutpat turpis, ut euimod diam pellentesque at. Sed sit amet nulla a dui dignisim euismod. Morbi luctus elementum dictum. Donec convallis mattis elit id varius. Quisque facilisis sapien quis mauris,, erat condimentum.</p>
+                      </div>
+                  </div>
+            </div> 
+            <div class="col-lg-3" id="sortableInProgress" class="connectedSortable" style="border-left:3px white solid" data-in-progress-column>
+              
+            </div>
+            <div class="col-lg-3"id="sortableDone" class="connectedSortable" style="border-left:3px white solid" data-done-column>
+            </div>            
+           </div>
+      </div>
+      </div>
+    </div>
+    </div>
+    <div class="row">
+        <div class="container-fluid">
+        </div>
+    </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/dragdrop.js"></script>
+    <script>
+      $(document).ready(function()
+      {
+        
+      });
+    </script>
+  </body>
+</html>

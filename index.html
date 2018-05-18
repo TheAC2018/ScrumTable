@@ -140,10 +140,10 @@
         <div class="container-fluid">
           <div class="row">
               <div class="col-lg-3" style="background-color: #e5e5e5;">
-                <div class="panel-heading panel-heading-divider" style="background-color: #e5e5e5;"><div class="tools"><span class="icon s7-plus"></span></div>Stories<span class="panel-subtitle">You can check your stories or add new story.</span></div>
+                <div class="panel-heading panel-heading-divider" data-modal="colored-default" style="background-color: #e5e5e5;"><div class="tools"><span span data-toggle="modal" data-target="#colored-dark" data-modal="colored-dark" class="icon s7-plus"></span></div>Stories<span class="panel-subtitle">You can check your stories or add new story.</span></div>
               </div>  
               <div class="col-lg-3" style="background-color: #58C7EF;">
-                  <div class="panel-heading panel-heading-divider" style="background-color: #58C7EF; color:white;"><div class="tools"><span class="icon s7-plus"></span></div>Planning<span class="panel-subtitle">Tasks in planning.</span></div>
+                  <div class="panel-heading panel-heading-divider" style="background-color: #58C7EF; color:white;">Planning<span class="panel-subtitle">Tasks in planning.</span></div>
               </div>  
               <div class="col-lg-3" style="background-color: #FFDC42;">
                   <div class="panel-heading panel-heading-divider" style="background-color: #FFDC42; color:white;">In Progress<span class="panel-subtitle">Tasks in progress.</span></div>
@@ -160,7 +160,7 @@
             <div class="col-lg-3" data-story-column>
                 <div class="panel panel-border" style="margin-top: 10px;">
                     <div class="panel-heading panel-heading-color panel-heading-color-contrast">
-                      <div class="tools"></span><span class="icon s7-close"></span></div><span class="title">Authentication Module</span><span class="panel-subtitle">19.05.2018 - 26.05.2018</span>
+                      <div class="tools"><span data-toggle="modal" data-target="#colored-info" data-modal="colored-info" class="icon s7-plus"></span></div><span class="title">Authentication Module</span><span class="panel-subtitle">19.05.2018 - 26.05.2018</span>
                     </div>
                     <div class="panel-body">
                       <p>Quisque gravida aliquam diam at cursus, quisque laoreet ac lectus a rhoncusac tempus odio.</p>
@@ -203,17 +203,129 @@
         </div>
     </div>
     </div>
+    <div id="colored-default" class="modal" style="perspective: 1300px;">
+      <div class="modal-content">
+        <div class="modal-header modal-header-colored">
+          <h4 class="modal-title">Custom Colored Header</h4>
+          <button type="button" data-dismiss="modal" aria-hidden="true" class="close modal-close"><span class="s7-close"></span></button>
+        </div>
+        <div class="modal-body">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ultrices euismod lobortis. Donec fermentum mattis velit id pretium. Suspendisse sed tortor sed diam lobortis tempus at sed lacus.</p>
+          <p>Fusce sit amet lacus arcu. Pellentesque iaculis massa vitae ullamcorper venenatis. Cras metus dolor, maximus sit amet est nec, pharetra blandit elit sagittis vehicula. Dolor sit amet.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" data-dismiss="modal" class="btn btn-link btn-link-secondary modal-close">Cancel</button>
+          <button type="button" data-dismiss="modal" class="btn btn-link btn-link-primary modal-close">Proceed</button>
+        </div>
+      </div>
+    </div> 
+    <div id="colored-dark" class="modal" style="perspective: 1300px;">
+      <div class="modal-content">
+        <div class="modal-header modal-header-colored modal-header-colored-dark">
+          <h4 class="modal-title">Add A New Story</h4>
+          <button type="button" data-dismiss="modal" aria-hidden="true" class="close modal-close"><span class="s7-close"></span></button>
+        </div>
+        <div class="modal-body">
+          <div class="form-group row">
+            <label class="col-12 col-sm-3 col-form-label text-sm-right">Title</label>
+            <div class="col-12 col-sm-12 col-lg-9">
+              <input type="text" placeholder="Title" class="form-control">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-12 col-sm-3 col-form-label text-sm-right">Description</label>
+            <div class="col-12 col-sm-12 col-lg-9">
+              <textarea class="form-control"></textarea>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-lg-3 col-form-label text-sm-right">Start Date:</label>
+            <div class="col-lg-3">
+                <input id="datepicker2" type="text" class="form-control datepicker">
+            </div>
+            <label class="col-lg-3 col-form-label text-sm-right">End Date:</label>
+            <div class="col-lg-3">
+              <input id="datepicker2" type="text" class="form-control datepicker">
+            </div>
+          </div> 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+        </div>  
+        <div class="modal-footer">
+          <button type="button" data-dismiss="modal" class="btn btn-link btn-link-danger modal-close">Cancel</button>
+          <button type="button" data-dismiss="modal" class="btn btn-link btn-link-primary modal-close">Add</button>
+        </div>
+      </div>
+    </div>
+    <div id="colored-info" class="modal" style="perspective: 1300px;">
+        <div class="modal-content">
+          <div class="modal-header modal-header-colored modal-header-colored-info">
+            <h4 class="modal-title">Add A New Task</h4>
+            <button type="button" data-dismiss="modal" aria-hidden="true" class="close modal-close"><span class="s7-close"></span></button>
+          </div>
+          <div class="modal-body">
+            <div class="form-group row">
+              <label class="col-12 col-sm-3 col-form-label text-sm-right">Title</label>
+              <div class="col-12 col-sm-12 col-lg-9">
+                <input type="text" placeholder="Title" class="form-control">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="col-12 col-sm-3 col-form-label text-sm-right">Description</label>
+              <div class="col-12 col-sm-12 col-lg-9">
+                <textarea class="form-control"></textarea>
+              </div>
+            </div>
+            <div class="form-group row" style="margin-top:10px;">
+              <label class="col-12 col-sm-3 col-form-label text-sm-right">Task Card Color</label>
+              <div class="col-12 col-sm-9 col-lg-9">
+                  <label class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" name="radio-color" checked="" class="custom-control-input"><span class="custom-control-label custom-control-color">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Orange Juice</span>
+                  </label>
+                  <label class="custom-control custom-radio custom-control-inline"> 
+                    <input type="radio" name="radio-color" class="custom-control-input"><span class="custom-control-label custom-control-color">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pink Love</span>
+                  </label>
+                </div>
+              </div>
+                <div class="form-group row">
+                  <label class="col-12 col-sm-3 col-form-label text-sm-right"></label>
+                  <div class="col-12 col-sm-9 col-lg-9">
+                    <label class="custom-control custom-radio custom-control-inline">
+                      <input type="radio" name="radio-color" class="custom-control-input"><span class="custom-control-label custom-control-color">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Night City</span>
+                    </label>
+                    <label class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" name="radio-color" class="custom-control-input"><span class="custom-control-label custom-control-color">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Little Fox</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label class="col-12 col-sm-3 col-form-label text-sm-right"></label>
+                    <div class="col-12 col-sm-9 col-lg-9">
+                    <label class="custom-control custom-radio custom-control-inline">
+                      <input type="radio" name="radio-color" class="custom-control-input"><span class="custom-control-label custom-control-color">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sky Blue</span>
+                    </label>
+                    <label class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" name="radio-color" class="custom-control-input"><span class="custom-control-label custom-control-color">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Passion</span>
+                      </label>
+                    </div>
+                  </div>
+            </div>  
+          <div class="modal-footer">
+            <button type="button" data-dismiss="modal" class="btn btn-link btn-link-danger modal-close">Cancel</button>
+            <button type="button" data-dismiss="modal" class="btn btn-link btn-link-primary modal-close">Add</button>
+          </div>
+        </div>
+      </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
     <script src="assets/js/app.js"></script>
     <script src="assets/js/dragdrop.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+   
     <script>
       $(document).ready(function()
       {
-        
+
       });
     </script>
   </body>

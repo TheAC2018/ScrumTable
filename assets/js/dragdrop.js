@@ -18,7 +18,12 @@ $(document).ready(function()
         cancel: ".panel-toggle",
         revert: true
     });
-
+    $("#sortableBoard").sortable({
+      connectWith: "#sortableBoard", 
+      handle: ".panel-heading",
+      cancel: ".panel-toggle",
+      revert: true
+  });
   $( ".panel" )
   .addClass( "ui-widget ui-widget-content ui-helper-clearfix ui-corner-all" )
   .find( ".tools" )
